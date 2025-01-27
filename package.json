@@ -6,15 +6,15 @@
 	"scripts": {
 		"start": "node myApp.js"
 	},
-	"dependencies": {
-		"express": "^4.14.0",
-		"helmet": "3.21.3"
-	},
 	"keywords": [
 		"node",
 		"hyperdev",
 		"express",
 		"freecodecamp"
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.21.2",
+		"helmet": "^3.21.3"
+	}
 }

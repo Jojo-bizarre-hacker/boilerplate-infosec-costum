@@ -5,6 +5,9 @@ const app = express();
 //Mount the helmet.hidePoweredBy() middleware
 app.use(helmet.hidePoweredBy());
 
+//Defence frameguard
+app.use(helmet.frameguard({action: 'deny'}));
+
 
 
 

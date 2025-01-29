@@ -11,7 +11,8 @@ app.use(helmet.frameguard({action: 'deny'}));
 //Defence XSS Attack
 app.use(helmet.xssFilter())
 
-
+//Defence against sniff(noSniff)
+app.usehelmet.noSniff())
 
 
 

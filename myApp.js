@@ -2,7 +2,8 @@ const express = require('express');
 const helmet = require('helmet');
 const app = express();
 
-helmet.hidePoweredBy()
+//Mount the helmet.hidePoweredBy() middleware
+app.use(helmet.hidePoweredBy());
 
 
 

@@ -12,7 +12,7 @@ app.use(helmet.frameguard({action: 'deny'}));
 app.use(helmet.xssFilter())
 
 //Defence against sniff(noSniff)
-app.usehelmet.noSniff())
+app.use(helmet.noSniff());
 
 
 

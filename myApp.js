@@ -17,7 +17,9 @@ app.use(helmet.noSniff());
 //Defence against IE-Noopen
 app.use(helmet.ieNoOpen());
 
-
+//Defence against HSTS
+var ninetyDaysInSeconds = 90*24*60*60
+app.use(helmet.hsts({maxAge: ninetyDaysInSeconds, force: true}));
 
 
 

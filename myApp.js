@@ -14,7 +14,8 @@ app.use(helmet.xssFilter())
 //Defence against sniff(noSniff)
 app.use(helmet.noSniff());
 
-
+//Defence against IE-Noopen
+app.use(helmet.ieNoOpen());
 
 
 

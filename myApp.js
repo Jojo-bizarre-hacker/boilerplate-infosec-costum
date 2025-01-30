@@ -24,7 +24,8 @@ app.use(helmet.hsts({maxAge: ninetyDaysInSeconds, force: true}));
 //Denfence against dnsPrefetchControl
 app.use(helmet.dnsPrefetchControl());
 
-
+//Defence against noCache
+app.use(helmet.noCache());
 
 
 

@@ -27,6 +27,8 @@ app.use(helmet.dnsPrefetchControl());
 //Defence against noCache
 app.use(helmet.noCache());
 
+//Defence contentSecurityPolicy
+app.use(helmet.contentSecurityPolicy({directives: { defaultSrc: ["'self'", "trusted-cdn.com"] }} ));
 
 
 
